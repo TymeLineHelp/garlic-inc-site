@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="icon" type="image/png" href="/static/favicon.png"/>
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.4.2/pure-min.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.5/d3.min.js"></script>
+    <script src="/static/nvd3.js"></script>
+    <link rel="stylesheet" href="/static/nvd3.css">
+
+    <script src="/static/main.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <title>Garlic, Inc.</title>
+
+</head>
+<header>
+    <section class="hero is-small is-info is-bold">
+      <div class="hero-head">
+            <nav class="navbar" style="background-color:#FF6F3F">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <h1 class="title">Garlic, Inc.</h1>
+                            <div id="upgrade">
+                            <a class="update-miner" href="https://github.com/lenis0012/ccminer/releases/tag/2.3.0-allium">
+                              <h1 class="download-miner">UPGRADE YOUR CCMINER</h1>
+                            </div>
+                        </a>
+                    </div>
+                        <div class="navbar-end-mob">
+                          <div id="mobile-nav" class="navbar-menu-mob">
+                            <a class="navbar-item-mob" href="/stats">
+                                <i class="far fa-chart-bar"></i>&nbsp;Graphs</a>
+                            <a class="navbar-item-mob" href="/tbs">
+                                <i class="fas fa-table"></i><br>Tabs</a>
+                            <a class="navbar-item-mob" id="workers" href="/workers">
+                                <i class="fas fa-cogs"></i>&nbsp;Workers</a>
+                            <a class="navbar-item-mob"href="http://faucet.garlicinc.ca">
+                                <i class="far fa-money-bill-alt"></i>&nbsp;Faucet</a>
+                        </div>
+                    </div>
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="/stats">
+                                <i class="far fa-chart-bar"></i>&nbsp;Graphs</a>
+                            <a class="navbar-item" href="/tbs">
+                                <i class="fas fa-table"></i>&nbsp;Tabs</a>
+                            <a class="navbar-item" id="workers" href="/workers">
+                                <i class="fas fa-cogs"></i>&nbsp;Workers</a>
+                            <a class="navbar-item"href="http://faucet.garlicinc.ca">
+                                <i class="far fa-money-bill-alt"></i>&nbsp;Faucet</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body" style="background-color:#FFA642">
+            <div class="container has-text-centered" >
+                <h1 class="title">Welcome to Garlic, Inc.</h1>
+                <h2 class="subtitle">Low fees, regular pay, and low minimum payout.</h2>
+                <h2 class="subtitle">Every hour workers have a 1/<span id="statsMinergarlicoin" style="color: white">{{=it.stats.algos.allium.workers}}</span> chance of getting 2.5GRLC from everyblock mined during that hour!</h2>
+                <pre class="crypto-url title" style="background-color:#FFA642">stratum+tcp://stratum.garlicinc.ca:3333</pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-link subheader"style="background-color:#FF6F3F">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column has-text-centered">
+                        <h3 class="title is-4">Low Fees</h3>
+                        <p class="subtitle">0.75%</p>
+                    </div>
+                    <div class="column has-text-centered">
+                        <h3 class="title is-4">Regular Payout</h3>
+                        <p class="subtitle">Every 3 minutes</p>
+                    </div>
+                    <div class="column has-text-centered">
+                        <h3 class="title is-4">Low Minimum Payout</h3>
+                        <p class="subtitle">0.01 GRLC</p>
+                    </div>
+                    <div class="column has-text-centered">
+                        <h3 class="title is-4">GRLC Source</h3>
+                        <p class="subtitle">Manufactured to perfection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<body>
+
+
+
+<main style="background-color:#303030">
+    {{=it.page}}
+</main>
+
+
+<footer style="background-color:#303030">
+    <div class="footer_container">
+        <span>Powered by <a href="https://github.com/foxer666/node-open-mining-portal">NOMP</a></span>
+
+        <div id="communityFooter">
+            <iframe src="//ghbtns.com/github-btn.html?user=foxer666&repo=node-open-mining-portal&type=watch&count=true"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
